@@ -119,9 +119,10 @@ spec:
 Shell Command
 
 $ kubectl apply -f service.yml
+```
+
 
 ### Step 9: View the created services
-
 ```
 Shell Command
 
