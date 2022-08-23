@@ -138,3 +138,13 @@ Shell Command
 $ minikube service k8-web-hello
 
 ```
+
+### Step 11: Delete all the deploy and service in single command
+
+```
+Shell Command
+
+$ kubectl delete -f deployment.yml -f service.yml
+
+
+```
