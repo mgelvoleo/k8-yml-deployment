@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: k8-web-hello
+spec:
+  replicas: 4
+  selector:
+    matchLabels:
+      app: k8-web-hello
+  template:
+    metadata:
+      labels:
+        app: k8-web-hello
+    spec:
+      containers:
+      - name: k8-web-hello
+        image: mgelvoleo/kube101
+        resources:
+          limits:
+            memory: "128Mi"
+            cpu: "250m"
+        ports:
+        - containerPort: 5000
